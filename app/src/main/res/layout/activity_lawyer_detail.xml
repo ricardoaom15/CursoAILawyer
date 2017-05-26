@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Nombre"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="60dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefono"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/detail_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="xxx-xxx-xxxx"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Especialidad"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/detail_speciality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Especialidad"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biografia"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/detail_biography"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="asd asd asd asd as das d as das d asd  asd as d as dasdas d as das d asd as dasda sdasd"
+        style="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:minLines="3"
+        android:maxLines="5"
+        android:ellipsize="end"/>
+
+</LinearLayout>
