@@ -1,5 +1,6 @@
 package com.raikersoft.lawyer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,17 +12,23 @@ import android.view.MenuItem;
 
 import com.raikersoft.lawyer.model.DataBaseHelper;
 
-public class MainActivity extends AppCompatActivity {
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-    DataBaseHelper dataBaseHelper;
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
 
-        dataBaseHelper = new DataBaseHelper(getApplicationContext());
+    }
 
+    @OnClick(R.id.main_fab)
+    public void newLawyerButton(){
+        Intent intent = new Intent(MainActivity.this, LawyerAddActivity.class);
+        startActivity(intent);
     }
 
 }

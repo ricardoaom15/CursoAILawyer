@@ -17,7 +17,7 @@ public class Constant {
     public static final String COLUMN_BIOGRAPHY = "biography";
 
     public static final String CREATE_TABLE_LAWYER = "CREATE TABLE "+TABLE_NAME+" (" +
-            COLUMN_ID + " VARCHAR PRIMARY KEY AUTOINCREMENT, " +
+            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
             COLUMN_NAME + " VARCHAR, " +
             COLUMN_PHONE + " VARCHAR, " +
             COLUMN_SPECIALITY + " VARCHAR, " +
